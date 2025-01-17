@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Detection Implementation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Error Detection Techniques Implementation</h1>
+
+    <!-- Tabs Section -->
+    <div class="tabs">
+      <button class="tab active" data-tab="parity">Parity Bit</button>
+      <button class="tab" data-tab="crc">CRC</button>
+      <button class="tab" data-tab="checksum">Checksum</button>
+      <button class="tab" data-tab="hamming">Hamming Code</button>
+    </div>
+
+    <!-- Content Sections for Each Tab -->
+    <div id="parity" class="tab-content active">
+      <h2>Parity Bit</h2>
+      <label for="parity-input">Enter Binary Data:</label>
+      <input type="text" id="parity-input" placeholder="e.g., 10101010">
+      <button onclick="simulateParity()">Simulate Parity Bit</button>
+      <div id="parity-visualization" class="visualization"></div>
+    </div>
+
+    <div id="crc" class="tab-content">
+      <h2>Cyclic Redundancy Check (CRC)</h2>
+      <label for="crc-input">Enter Binary Data:</label>
+      <input type="text" id="crc-input" placeholder="e.g., 10101010">
+      <label for="crc-polynomial">Enter Polynomial (Binary):</label>
+      <input type="text" id="crc-polynomial" placeholder="e.g., 1101">
+      <button onclick="simulateCRC()">Simulate CRC</button>
+      <div id="crc-visualization" class="visualization"></div>
+    </div>
+
+    <div id="checksum" class="tab-content">
+      <h2>Checksum</h2>
+      <label for="checksum-input">Enter Binary Data:</label>
+      <input type="text" id="checksum-input" placeholder="e.g., 101010101010">
+      <button onclick="simulateChecksum()">Simulate Checksum</button>
+      <div id="checksum-visualization" class="visualization"></div>
+    </div>
+
+    <div id="hamming" class="tab-content">
+      <h2>Hamming Code</h2>
+      <label for="hamming-input">Enter Binary Data:</label>
+      <div>
+        <input type="text" id="hamming-input" placeholder="e.g., 1011">
+      </div>
+      <button onclick="simulateHamming()">Simulate Hamming Code</button>
+      <div id="hamming-visualization" class="visualization"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

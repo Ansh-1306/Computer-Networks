@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellman-Ford Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">Bellman-Ford Algorithm Visualizer</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5>Controls</h5>
+            <button class="btn btn-primary btn-block mb-2" id="add-node">Add Node</button>
+            <button class="btn btn-secondary btn-block mb-2" id="add-edge">Add Edge</button>
+            <button class="btn btn-info btn-block mb-2" id="generate-random-graph">Generate Random Graph</button>
+            <button class="btn btn-success btn-block mb-2" id="run-algorithm">Run Bellman-Ford</button>
+            <button class="btn btn-danger btn-block" id="reset">Reset</button>
+          </div>
+        </div>
+        <div class="output mt-3">
+          <h5>Output:</h5>
+          <pre id="output-log"></pre>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div id="graph-container" class="border"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

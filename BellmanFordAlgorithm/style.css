@@ -1,0 +1,37 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  #graph-container {
+    height: 600px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .node {
+    fill: #007bff;
+    stroke: #fff;
+    cursor: pointer;
+  }
+  
+  .edge {
+    stroke: #6c757d;
+    stroke-width: 2px;
+    marker-end: url(#arrowhead);
+  }
+  
+  .highlight {
+    stroke: #28a745;
+    stroke-width: 4px;
+  }
+  
+  .output {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+  }
+  
